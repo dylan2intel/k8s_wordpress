@@ -9,7 +9,10 @@ Usage:
 docker build -t siege -f Dockerfile.siege .
 
 # run container
-docker run -it siege -c 100 -t 60S http://<wordpress_ip>:<wordpress_port>
+docker run -it siege -c 100 -t 60S http://<wordpress_ip>:<wordpress_port> # simulate 100 concurrent users to stress 60 seconds on WordPress
+
+# More usages
+docker run -it siege --help
 
 ```
 
